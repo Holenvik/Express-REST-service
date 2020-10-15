@@ -21,8 +21,14 @@ app.use('/', (req, res, next) => {
   next();
 });
 
-app.use('/boards', boardRouter);
 app.use('/users', userRouter);
+app.use('/boards', boardRouter);
 app.use('/boards', taskRouter);
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broken!');
+  next();
+});
 
 module.exports = app;

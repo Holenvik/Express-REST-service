@@ -3,9 +3,9 @@ const uuid = require('uuid');
 class Task {
   constructor({
     id = uuid(),
-    title = 'Title',
-    order = 0,
-    description = 'Some description',
+    title = 'TASK',
+    order,
+    description = 'DESCRIPTION',
     userId = null,
     boardId = null,
     columnId = null
@@ -19,32 +19,9 @@ class Task {
     this.columnId = columnId;
   }
 
-  setTitle(title = 'Title') {
-    this.title = title;
-  }
-
-  setOrder(order = 0) {
-    this.order = order;
-  }
-
-  setDescription(description = 'description') {
-    this.description = description;
-  }
-
-  setUserId(userId = null) {
-    this.userId = userId;
-  }
-
-  setBoardId(boardId = null) {
-    this.boardId = boardId;
-  }
-
-  setColumnId(columnId = null) {
-    this.columnId = columnId;
-  }
-
-  static toResponse(task) {
-    return task;
+  static toResponse(board) {
+    const { id, title, order, description, userId, boardId, columnId } = board;
+    return { id, title, order, description, userId, boardId, columnId };
   }
 }
 

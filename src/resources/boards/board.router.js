@@ -1,52 +1,47 @@
 const router = require('express').Router();
+const Board = require('./board.model');
 const boardService = require('./board.service');
 
 router.route('/').get(async (req, res) => {
-  const boards = await boardService.getAllBoards();
-  res.json(boards);
-});
-
-router.route('/').post(async (req, res) => {
-  const { title, columns } = req.body;
-
-  if (!title || !columns) {
-    return res.sendStatus(400);
-  }
-
-  const board = await boardService.createBoard(req.body);
-
-  res.status(200).send(board);
+  const boards = await boardService.getAll();
+  res.json(boards.map(Board.toResponse));
 });
 
 router.route('/:id').get(async (req, res) => {
-  const board = await boardService.findBoard(req.params.id);
-  res.status(200).send(board || {});
+  try {
+    const board = await boardService.get(req.params.id);
+    res.json(Board.toResponse(board));
+  } catch (e) {
+    res.status(404).send(e.message);
+  }
+});
+
+router.route('/').post(async (req, res) => {
+  const board = await boardService.create(
+    new Board({
+      title: req.body.title,
+      columns: req.body.columns
+    })
+  );
+
+  res.json(Board.toResponse(board));
 });
 
 router.route('/:id').put(async (req, res) => {
-  const board = await boardService.findBoard(req.params.id);
+  const board = new Board({
+    title: req.body.title,
+    columns: req.body.columns
+  });
+  board.id = req.params.id;
 
-  if (board) {
-    const updatedBoard = { ...req.body, id: req.params.id };
+  const updatedBoard = await boardService.update(board);
 
-    await boardService.editBoard(updatedBoard);
-    res.status(200).send(updatedBoard);
-  } else {
-    res.sendStatus(400);
-  }
+  res.json(Board.toResponse(updatedBoard));
 });
 
 router.route('/:id').delete(async (req, res) => {
-  console.log(req.params.id);
-  const board = await boardService.findBoard(req.params.id);
-  console.log('______________FOUNDBOARD______________');
-  console.log(board);
-  if (board) {
-    await boardService.deleteBoard(req.params.id);
-    res.sendStatus(200);
-  } else {
-    res.sendStatus(400);
-  }
+  const boards = await boardService.del(req.params.id);
+  res.json(boards.map(Board.toResponse));
 });
 
 module.exports = router;
