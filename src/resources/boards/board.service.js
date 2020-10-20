@@ -1,19 +1,18 @@
 const boardsRepo = require('./board.memory.repository');
+const taskService = require('../tasks/task.service');
 
-const getAllBoards = () => boardsRepo.getAllBoards();
+const getAll = () => boardsRepo.getAll();
 
-const createBoard = board => boardsRepo.createBoard(board);
+const get = id => boardsRepo.get(id);
 
-const findBoard = id => boardsRepo.findBoard(id);
+const create = board => boardsRepo.create(board);
 
-const editBoard = board => boardsRepo.editBoard(board);
+const update = board => boardsRepo.update(board);
 
-const deleteBoard = id => boardsRepo.deleteBoard(id);
-
-module.exports = {
-  getAllBoards,
-  createBoard,
-  findBoard,
-  editBoard,
-  deleteBoard
+const del = id => {
+  taskService.delBoard(id);
+  const boards = boardsRepo.del(id);
+  return boards;
 };
+
+module.exports = { getAll, get, create, update, del };

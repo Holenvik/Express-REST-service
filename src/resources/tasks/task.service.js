@@ -1,52 +1,17 @@
 const tasksRepo = require('./task.memory.repository');
-const Task = require('./task.model');
 
-const getAllByUserId = userId => tasksRepo.getAllByUserId(userId);
+const getAll = boardId => tasksRepo.getAll(boardId);
 
-const getAllByBoardId = boardId => tasksRepo.getAllByBoardId(boardId);
+const get = (boardId, taskId) => tasksRepo.get(boardId, taskId);
 
-const getByIds = (boardId, taskId) => tasksRepo.getByIds(boardId, taskId);
+const create = task => tasksRepo.create(task);
 
-const create = (boardId, fields) => {
-  const task = new Task({ ...fields, boardId });
+const update = (boardId, task) => tasksRepo.update(boardId, task);
 
-  return tasksRepo.create(task);
-};
+const del = (boardId, taskId) => tasksRepo.del(boardId, taskId);
 
-const update = (boardId, id, boardFields) => {
-  const task = new Task({ ...boardFields, id, boardId });
+const delBoard = boardId => tasksRepo.delBoard(boardId);
 
-  return tasksRepo.update(task);
-};
+const delUser = userId => tasksRepo.delUser(userId);
 
-const deleteByIds = (boardId, id) => {
-  return tasksRepo.deleteByIds({ boardId, id });
-};
-
-const clearUserId = async userId => {
-  const tasks = await getAllByUserId(userId);
-
-  return tasks.forEach(task => {
-    task.userId = null;
-  });
-};
-
-const deleteTasksByBoardId = boardId => {
-  return tasksRepo.deleteTasksByBoardId(boardId);
-};
-
-const deleteTasksByUserId = userId => {
-  return tasksRepo.deleteTasksByUserId(userId);
-};
-
-module.exports = {
-  create,
-  update,
-  getAllByBoardId,
-  getByIds,
-  deleteByIds,
-  getAllByUserId,
-  clearUserId,
-  deleteTasksByBoardId,
-  deleteTasksByUserId
-};
+module.exports = { getAll, get, create, update, del, delBoard, delUser };

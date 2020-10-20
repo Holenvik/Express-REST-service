@@ -1,28 +1,21 @@
-const uuid = require('uuid');
-const tasksService = require('../tasks/task.service');
+const usersDb = require('../../common/inMemoryDbUsers');
 
-let users = [];
+const getAll = async () => usersDb.getAll();
 
-const getAll = async () => {
-  return users;
-};
-const createNew = async newUser => {
-  const newUserWithId = { ...newUser, id: uuid() };
-  users.push(newUserWithId);
-  return newUserWithId;
-};
+const get = async id => {
+  const user = await usersDb.get(id);
 
-const findUser = async id => users.find(user => user.id === id);
+  if (!user) {
+    throw new Error(`The user with id: ${id} was not found`);
+  }
 
-const editUser = async userInfo => {
-  const foundUserIndex = users.findIndex(user => user.id === userInfo.id);
-  users[foundUserIndex] = userInfo;
+  return user;
 };
 
-const deleteUser = async id => {
-  const filteredUsers = users.filter(user => user.id !== id);
-  await tasksService.deleteTasksByUserId(id);
-  users = filteredUsers;
-};
+const create = async user => usersDb.create(user);
 
-module.exports = { getAll, createNew, findUser, editUser, deleteUser };
+const update = async user => usersDb.update(user);
+
+const del = async id => usersDb.del(id);
+
+module.exports = { getAll, get, create, update, del };
