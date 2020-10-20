@@ -1,0 +1,67 @@
+{"message":"method=POST url=/boards params={} body={\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=POST url=/boards params={} body={\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=GET url=/users params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=GET url=/boards params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=POST url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks params={} body={\"title\":\"Autotest task\",\"order\":0,\"description\":\"Lorem ipsum\",\"userId\":null,\"boardId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=POST url=/users params={} body={\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=GET url=/boards params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=GET url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=GET url=/users/396ac2dc-69c0-4fd7-ad21-5e0e882fe6c1 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=GET url=/boards/caee2cec-552d-4034-8788-af533e3f1077 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=DELETE url=/users/396ac2dc-69c0-4fd7-ad21-5e0e882fe6c1 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=GET url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks params={} body={}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=POST url=/boards params={} body={\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:36"}
+{"message":"method=POST url=/users params={} body={\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=GET url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks/9836ac14-ba6d-4262-a947-4a74082f0cef params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/boards/70f1d3ea-708e-4bc6-9c6a-ab24a93d76e4 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/users/4f0977bc-1b4e-419a-9043-3a137346da7d params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=POST url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks params={} body={\"title\":\"Autotest task\",\"order\":0,\"description\":\"Lorem ipsum\",\"userId\":null,\"boardId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=POST url=/boards params={} body={\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=POST url=/users params={} body={\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks/fc07265b-90b4-4a10-a980-aead5305dceb params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=PUT url=/boards/0d8e476a-abf6-49a7-8512-2feb8b2e8b8e params={} body={\"id\":\"0d8e476a-abf6-49a7-8512-2feb8b2e8b8e\",\"title\":\"Autotest updated board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=PUT url=/users/5539aa29-90ec-40bf-8fbd-5dfff31a915e params={} body={\"name\":\"Autotest updated TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\",\"id\":\"5539aa29-90ec-40bf-8fbd-5dfff31a915e\"}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=POST url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks params={} body={\"title\":\"Autotest task\",\"order\":0,\"description\":\"Lorem ipsum\",\"userId\":null,\"boardId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=GET url=/boards/0d8e476a-abf6-49a7-8512-2feb8b2e8b8e params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=GET url=/users/5539aa29-90ec-40bf-8fbd-5dfff31a915e params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=PUT url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks/360ccfbd-146a-4118-83a9-eba21f3f4a07 params={} body={\"id\":\"360ccfbd-146a-4118-83a9-eba21f3f4a07\",\"title\":\"Autotest updated task\",\"order\":0,\"description\":\"Lorem ipsum\",\"userId\":null,\"boardId\":\"195aecf7-038f-4307-aa74-c546acc3639c\",\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/boards/0d8e476a-abf6-49a7-8512-2feb8b2e8b8e params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/users/5539aa29-90ec-40bf-8fbd-5dfff31a915e params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=GET url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks/360ccfbd-146a-4118-83a9-eba21f3f4a07 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=POST url=/boards params={} body={\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=POST url=/users params={} body={\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=GET url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks/9836ac14-ba6d-4262-a947-4a74082f0cef params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/boards/8ddecc3b-6715-406a-bc62-4d91960427ad params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/users/bdc45e32-18dc-42af-9721-5ef2961b920e params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=DELETE url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks/9836ac14-ba6d-4262-a947-4a74082f0cef params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=GET url=/boards/8ddecc3b-6715-406a-bc62-4d91960427ad params={} body={}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=POST url=/users params={} body={\"name\":\"TEST_USER\",\"login\":\"test_user\",\"password\":\"T35t_P@55w0rd\"}","level":"info","timestamp":"2020-10-20 10:01:37"}
+{"message":"method=GET url=/boards/195aecf7-038f-4307-aa74-c546acc3639c/tasks/9836ac14-ba6d-4262-a947-4a74082f0cef params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards params={} body={\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards params={} body={\"title\":\"Autotest board\",\"columns\":[{\"title\":\"Backlog\",\"order\":1},{\"title\":\"Sprint\",\"order\":2}]}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=DELETE url=/boards/195aecf7-038f-4307-aa74-c546acc3639c params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks params={} body={\"title\":\"Task #1\",\"order\":1,\"description\":\"Lorem ipsum\",\"boardId\":\"c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3\",\"userId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks params={} body={\"title\":\"Task #2\",\"order\":2,\"description\":\"Lorem ipsum\",\"boardId\":\"c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3\",\"userId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks params={} body={\"title\":\"Task #3\",\"order\":3,\"description\":\"Lorem ipsum\",\"boardId\":\"c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3\",\"userId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks params={} body={\"title\":\"Task #4\",\"order\":4,\"description\":\"Lorem ipsum\",\"boardId\":\"c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3\",\"userId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks params={} body={\"title\":\"Task #5\",\"order\":5,\"description\":\"Lorem ipsum\",\"boardId\":\"c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3\",\"userId\":null,\"columnId\":null}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards/7d433500-bc85-4187-80a4-9dfb1aab041f/tasks params={} body={\"title\":\"Task #1\",\"order\":1,\"description\":\"Lorem ipsum\",\"userId\":\"8fa2e059-e641-4027-8dc9-698f56edf155\",\"boardId\":\"7d433500-bc85-4187-80a4-9dfb1aab041f\"}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=POST url=/boards/7d433500-bc85-4187-80a4-9dfb1aab041f/tasks params={} body={\"title\":\"Task #2\",\"order\":2,\"description\":\"Lorem ipsum\",\"userId\":\"8fa2e059-e641-4027-8dc9-698f56edf155\",\"boardId\":\"7d433500-bc85-4187-80a4-9dfb1aab041f\"}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/c2c02665-07c0-49d8-952a-d80ddbdc4ab4 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/06393759-42f1-4367-a9e5-c0ca24ca81b2 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/2a2f4ebf-566c-4d68-af20-6acda18197bd params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/1ee8771e-0187-40e7-ad13-f1a208719238 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/df5ac3e2-ef6e-4f5d-b9b0-27b716e9bd22 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=DELETE url=/users/8fa2e059-e641-4027-8dc9-698f56edf155 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:38"}
+{"message":"method=DELETE url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=GET url=/boards/7d433500-bc85-4187-80a4-9dfb1aab041f/tasks/57213534-24b5-416f-8b6a-8eaa2ea6ca18 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/c2c02665-07c0-49d8-952a-d80ddbdc4ab4 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/06393759-42f1-4367-a9e5-c0ca24ca81b2 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/2a2f4ebf-566c-4d68-af20-6acda18197bd params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/1ee8771e-0187-40e7-ad13-f1a208719238 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=GET url=/boards/c49ee5a4-1e39-4e17-b8a5-8522f62dfaa3/tasks/df5ac3e2-ef6e-4f5d-b9b0-27b716e9bd22 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=GET url=/boards/7d433500-bc85-4187-80a4-9dfb1aab041f/tasks/1eacf793-c326-4572-b753-cbd8e0e5fa08 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=DELETE url=/boards/af4113b9-7f1e-45b1-b324-fd93e2ea34f5 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=DELETE url=/boards/7d433500-bc85-4187-80a4-9dfb1aab041f/tasks/57213534-24b5-416f-8b6a-8eaa2ea6ca18 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=DELETE url=/boards/7d433500-bc85-4187-80a4-9dfb1aab041f/tasks/1eacf793-c326-4572-b753-cbd8e0e5fa08 params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
+{"message":"method=DELETE url=/boards/7d433500-bc85-4187-80a4-9dfb1aab041f params={} body={}","level":"info","timestamp":"2020-10-20 10:01:39"}
